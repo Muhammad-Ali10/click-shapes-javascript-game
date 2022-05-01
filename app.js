@@ -64,7 +64,7 @@ function hit(e){
     let start = e.target.start;
     let end = new Date().getTime();
     let duration = (end-start)/1000;
-    let maxDuration = 1;
+    let maxDuration = 5;
     
     clearTimeout(playArea.timer);
     showMessage('It took you ' + duration + ' seconds to click');
